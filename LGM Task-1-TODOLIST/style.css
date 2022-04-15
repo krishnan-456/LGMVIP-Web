@@ -1,0 +1,190 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,#9c27b0,#8ecdff);
+}
+h3
+{
+    font-size: 68px;
+    color: transparent;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    -webkit-text-stroke: .5px #ccc;
+}
+#newtask
+{   
+    width: 40%;
+    height: 80px;
+    padding: 18px 32px;
+    background-color: #fff;  
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    position: absolute;
+    top: 180px;
+    left: 440px;
+}
+#newtask input
+{
+    width: 80%;
+    height: 30px;
+    padding: 20px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    color: #000;
+}
+#newtask input:focus
+{
+    outline: none;
+    border-color: #00af66;
+}
+#newtask button
+{
+    padding: 12px 20px;
+    position: absolute;
+    border: 0;
+    outline: none;
+    margin-left: 40px;
+    color: #fff;
+    background: #00af66;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+#newtask button:hover{
+    background: #007e2a;  
+}
+#tasks
+{   
+    width: 680px;
+    padding: 40px 30px;
+    margin-top: 30px;
+    position: absolute;
+    top: 280px;
+    left: 407px;
+}
+.task 
+{   
+   background: #fff;
+   border-radius: 5px;
+   height: 50px;
+   padding: 17px 30px;
+   cursor: pointer;
+   border-bottom: 3px solid rgb(215, 214, 214);
+   transition: all .3s;
+}
+.task:hover 
+{
+   border-bottom: 3px solid #00af66;
+
+}
+.task button
+{
+    color: #00af66;
+    background: #fff;
+    outline: none;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+    float: right;
+    position: relative;
+    bottom: 8px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.task button:hover{
+    color: #fff;
+    background: #00af66;
+}
+.task span 
+{
+    font-size: 16px;
+    font-weight: 400;
+}
+.completed 
+{
+    text-decoration: line-through;
+    opacity: .7;
+}
+@media screen and (max-width:900px)
+{
+    h3 
+    {
+        font-size: 42px;
+        top: 30px;
+        left: 40px;
+        font-weight: 800;
+    }
+    #newtask
+    {
+        position: absolute;
+        left: 67px;
+    }
+    #tasks
+    {
+        position: absolute;
+        left: 40px;
+    }
+    #newtask
+    {
+        width: 80%;
+    }
+    #newtask input 
+    {
+        width: 80%;
+    }
+}
+@media screen and (max-width:480px) 
+{
+    h3 
+    {
+        font-size: 35px;
+        left: 95px;
+    }   
+    #newtask
+    {
+        width: 95%;
+        position: absolute;
+        left: 10px;
+    }
+    #tasks
+    {
+        width: 95%;
+        position: absolute;
+        left: 10px;
+    }
+    #newtask input 
+    {
+        width: 70%;
+    }
+    #newtask button 
+    {
+        width: 24%;
+        margin-left: 15px;
+    }
+    .task
+    {
+        border-bottom: 0px;
+        border-radius: 1px;
+    }
+    .task:hover
+    {
+        border-bottom: 0px;
+    }
+}
